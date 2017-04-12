@@ -1,6 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
-## Write a short comment describing this function
+## Caching the Inverse of a Matrix
+## functions makeMatrix
+## <<- operator which can be used to assign a value to an object in an 
+## environment that is different from the current environment.
 
 makeMatrix <- function(x = matrix()) {
 m <- NULL
@@ -15,7 +16,7 @@ set <- function(y) {
         setinverse = setinverse,
         getinverse = getinverse)
 }
-## Write a short comment describing this function
+## The following function calculates the Matrix inverse from cache
 cacheSolve <- function(x, ...) {
 m <- x$getinverse()
 if(!is.null(m)) {
